@@ -2,7 +2,7 @@ Replication Files for "Convergence of Cancer Mortality Rates Across U.S. States:
 by Alberto Carlo Olivei
    Rogel Cancer Center, University of Michigan, 1500 E Medical Center Dr, Ann Arbor, MI 48109, USA. 
    e-mail address: acolivei@umich.edu
-   This version: May 2025   
+   This version: September 2025   
 
 You will need Stata to run the programs.
 
@@ -17,7 +17,7 @@ data_cancer_transformed.dta						data transformed and saved after running the ab
 
 Cancer Mortality Convergence 2025 data summary and box plot.do		runs simple data summaries and produces Figure 1 (not edited) in the text
 
-Cancer Mortality Convergence 2025 regressions.do			runs the regressions in Table 1 and Table 2 in the text, and Table 3 in the appendix
+Cancer Mortality Convergence 2025 regressions.do			runs the regressions in Table 1 and Table 2 in the text, and Figure 1A and Table 3 in the appendix
 
 
 

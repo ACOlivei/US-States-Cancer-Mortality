@@ -2,12 +2,13 @@
 * by Alberto Carlo Olivei
 *   Rogel Cancer Center, University of Michigan, 1500 E Medical Center Dr, Ann Arbor, MI 48109, USA. 
 *   e-mail address: acolivei@umich.edu
-*   This version: May 2025
+*   This version: September 2025
 
 clear
 
 * You will need to replace "~" in the line below with your own directory
-use "~\data_cancer_original.dta"
+*use "~/data_cancer_original.dta"
+
 
 xtset fips year
 
@@ -35,9 +36,17 @@ gen ln_gdp = ln(gdp/(pop_tot/1000))
 gen df4_ln_gdp = f4.ln_gdp - ln_gdp	
 
 
+* generate log of per capita healthcare GDP
+gen ln_gdp_hc = ln(gdp_hc/(pop_tot/1000))  
+
+
 * generate log of black population (as percent of total population)
 gen ln_black = ln(100*pop_black/pop_tot)
 
 
+* generate log of rural population (already expressed as percent of total population)
+gen ln_rural = ln(rural_census10)
+
+
 * You will need to replace "~" in the line below with your own directory
-save "~\data_cancer_transformed.dta" , replace
+save "~/data_cancer_transformed.dta" , replace

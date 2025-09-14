@@ -7,7 +7,7 @@
 clear
 
 * You will need to replace "~" in the line below with your own directory
-*use "~/data_cancer_original.dta"
+use "~/data_cancer_original.dta"
 
 
 xtset fips year
@@ -50,3 +50,4 @@ gen ln_rural = ln(rural_census10)
 
 * You will need to replace "~" in the line below with your own directory
 save "~/data_cancer_transformed.dta" , replace
+
